@@ -6,7 +6,6 @@ Summary:        LZMA compressor with integrity checking
 License:        GPLv3+
 URL:            http://www.nongnu.org/lzip/lzip.html
 Source0:        http://download.savannah.gnu.org/releases/lzip/lzip-%{version}.tar.gz
-Source1:        http://download.savannah.gnu.org/releases/lzip/lzip-%{version}.tar.gz.sig
 BuildRequires:  gcc-c++
 
 %description
