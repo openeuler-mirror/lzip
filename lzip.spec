@@ -1,6 +1,6 @@
 Name:           lzip
 Version:        1.20
-Release:        1%{?dist}
+Release:        2
 Summary:        LZMA compressor with integrity checking
 
 License:        GPLv3+
@@ -47,5 +47,8 @@ make check
 
 
 %changelog
+* Tue Dec 14 2021 konglidong <konglidong@uniontech.com> - 1.20-2
+- delete %dist
+
 * Tue May 05 2020 Hubble Zhu <zhuhengbo1@huawei.com> - 1.20-1
 - First release.
