@@ -1,6 +1,6 @@
 Name:           lzip
 Version:        1.20
-Release:        2
+Release:        3
 Summary:        LZMA compressor with integrity checking
 
 License:        GPLv3+
@@ -24,7 +24,7 @@ sed -i 's/\r//' COPYING.txt
 
 
 %build
-%configure CXXFLAGS="%{build_cxxflags}" LDFLAGS="%{build_ldflags}"
+%configure CXX=$CXX CXXFLAGS="%{build_cxxflags}" LDFLAGS="%{build_ldflags}"
 make %{?_smp_mflags}
 
 
@@ -47,6 +47,9 @@ make check
 
 
 %changelog
+* Mon Apr 17 2023 Xiaoya Huang <huangxiaoya@iscas.ac.cn> - 1.20-3
+- Support specify compiler
+
 * Tue Dec 14 2021 konglidong <konglidong@uniontech.com> - 1.20-2
 - delete %dist
 
